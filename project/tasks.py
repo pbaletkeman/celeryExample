@@ -5,7 +5,7 @@ from time import sleep
 
 
 @shared_task(bind=True, base=AbortableTask)
-def add_user(self):
+def start_action(self):
     
     for i in range(100):
         print(i)
